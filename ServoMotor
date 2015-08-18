@@ -18,10 +18,6 @@ void loop()
   delay(1000);
   set_angle ( 1, 120);
   delay(1000);
-  set_angle ( 12, 0);
-  delay(1000);
-  set_angle ( 12, 120);
-  delay(1000);
 
 }
 
