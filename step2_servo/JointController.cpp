@@ -345,13 +345,10 @@ bool PLEN2::JointController::setAngle(unsigned char joint_id, unsigned int angle
 		@attention
 		反転出力モードに設定しているため、PWM_MAX() < PWM_MIN()の順序が正しいです。
 	*/
-	_pwms[joint_id] = constrain(
-		map(
-			angle,
-			PLEN2::JointController::ANGLE_MIN(), PLEN2::JointController::ANGLE_MAX(),
-			PLEN2::JointController::PWM_MIN(),   PLEN2::JointController::PWM_MAX()
-		),
-		PLEN2::JointController::PWM_MAX(), PLEN2::JointController::PWM_MIN()
+	_pwms[joint_id] = map(
+		angle,
+		PLEN2::JointController::ANGLE_MIN(), PLEN2::JointController::ANGLE_MAX(),
+		PLEN2::JointController::PWM_MIN(),   PLEN2::JointController::PWM_MAX()
 	);
 
 	return true;

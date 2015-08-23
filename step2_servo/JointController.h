@@ -39,10 +39,10 @@ private:
 	inline static const int ANGLE_NEUTRAL()          { return 900;  }
 
 	//! @brief パルス幅変調波の最小値
-	inline static const int PWM_MIN()                { return 816;  }
+	inline static const int PWM_MIN()                { return 492;  }
 
 	//! @brief パルス幅変調波の最大値
-	inline static const int PWM_MAX()                { return 492;  }
+	inline static const int PWM_MAX()                { return 816;  }
 
 	//! @brief パルス幅変調波の中間値
 	inline static const int PWM_NEUTRAL()            { return 654;  }
